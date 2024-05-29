@@ -38,6 +38,7 @@ const data = [
   },
 ];
 
+const main = document.querySelector('main');
 const board = document.getElementById('board');
 
 data.forEach((item, index) => {
@@ -60,11 +61,17 @@ boardItems.forEach(item => {
   setTimeout(() => {
     item.style.transform = 'translateX(0)';
     
-    //this is the code im having isses with. The overflow doesn't seem to come off. I have experimented with bgColor and it worked, it's the overflow that isnt working.
-    board.style.overflow = 'auto';
+    
+    
   }, 1200);
 });
 
 setTimeout(() => {
+  main.classList.remove('hidden');
     board.children[0].style.transform = 'scale(1.1)';
+    board.children[0].setAttribute('data-top-rank', 'true');
+    board.style.setProperty('--__opacity', 1);
+    board.style.setProperty('--__shadow', '0 6px 6px 2px rgba(200, 200, 200, 1)');
+    
+    
 }, 2600);
