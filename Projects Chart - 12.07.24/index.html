@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <title></title>
+</head>
+
+<body class="grid place-items-center min-h-screen bg-sky-200">
+  
+  <main class="w-[75%] max-w-[350px]">
+    <div class="section grid place-items-center text-center bg-white p-10 scale-0 transition-all duration-500">
+      <img class="size-24 rounded-full object-cover shadow-sm" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW4lMjBwcm9maWxlJTIwcGljdHVyZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+      <h3 class="text-lg font-semibold mt-5">Lucy Hawks</h3>
+      <p class="rounded-full border-2 border-sky-200 py-1.5 px-5 text-sm shadow-sm transition-all hover:bg-sky-200 hover:text-white">UI/UX designer</p>
+      
+      <p class="text-xs text-gray-500 mt-3">A highly detailed orientated designer who has a keen eye for making beautiful components.</p>
+    </div>
+    <div class="section grid place-items-center text-center bg-neutral-800 text-white py-5 scale-0 transition-all duration-500 shadow-lg">
+      <h3 class="text-lg mb-5">Projects</h3>
+      
+      <div class="size-32 rounded-full flex flex-col justify-center relative after:absolute after:w-[95%] after:h-[95%] after:bg-neutral-800 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:shadow-inner after:shadow-white/[.25]" style="background: conic-gradient(#F97316 14%, #6366F1 14% 40%, #10B981 40%);">
+        <h3 class="font-bold text-2xl relative z-10">314</h3>
+        <p class="text-gray-500 relative z-10">Total</p>
+      </div>
+      
+      
+      <div class="grid grid-cols-3 p-4 shadow-2xl shadow-black mt-5">
+        <div class="grid place-items-center">
+          <h3 class="font-bold">167</h3>
+          <p class="text-gray-500 text-sm">Completed</p>
+          <div class="size-2 rounded-full bg-emerald-400"></div>
+        </div>
+        <div class="grid place-items-center">
+          <h3 class="font-bold">24</h3>
+          <p class="text-gray-500 text-sm">Overdue</p>
+          <div class="size-2 rounded-full bg-orange-400"></div>
+        </div>
+        <div class="grid place-items-center">
+          <h3 class="font-bold">123</h3>
+          <p class="text-gray-500 text-sm">In progress</p>
+          <div class="size-2 rounded-full bg-indigo-400"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
